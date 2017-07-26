@@ -12,7 +12,11 @@ var ViewModel = function () {
         }
         return "Born";
     }, this);
-
+    this.nicknames = ko.observableArray([
+        "Mr. T",
+        "Morning Call",
+        "sweet"
+        ]);
     this.incrementCounter = function () {
         this.clickCount(this.clickCount() + 1);
     };
